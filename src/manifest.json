@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "StackOverflow Upvoted Filter",
+  "version": "0.0.0",
+  "description": "Quickly find the answers you upvoted!",
+  "author": "Guillaume Grégoire",
+  "homepage_url": "https://github.com/ggregoire/stackoverflow-upvoted-filter-extension",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_icon": { "16": "icons/16.png" },
+    "default_title": "StackOverflow Upvoted Filter"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.stackoverflow.com/*",
+        "https://*.stackexchange.com/*",
+        "https://*.serverfault.com/*",
+        "https://*.superuser.com/*",
+        "https://*.askubuntu.com/*"
+      ],
+      "js": ["js/content_script.js"]
+    }
+  ]
+}
