@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "StackOverflow Upvoted Filter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Quickly find the answers you upvoted!",
   "author": "Guillaume Grégoire",
   "homepage_url": "https://github.com/ggregoire/stackoverflow-upvoted-filter-extension",
